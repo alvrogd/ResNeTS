@@ -1,0 +1,29 @@
+ResNeTS
+
+Code release for:
+
+- "ResNeTS: a ResNet for Time Series Analysis of Sentinel-2 Data Applied to
+Grassland Plant-Biodiversity Prediction"
+- DOI: 10.1109/JSTARS.2024.3454271
+
+Copyright 2024 Álvaro Goldar Dieste
+
+This project is licensed under the Apache License, Version 2.0; see the LICENSE
+file for details.
+
+This project implements multiple deep learning models for time series analysis.
+Some of these models are reimplementations of works by other authors. The
+publicly available code repositories of these works have been used as guidance
+during the development of this project to ensure equivalent functionality. All
+relevant references are provided where applicable.
+
+The dataset used in this project is derived from public data available at the
+repository of the Biodiversity Exploratories BExIS
+(https://www.bexis.uni-jena.de/); accession numbers 30969 (Sentinel-2 time
+series) and 27386 (Species inventories). This data is used in compliance with
+the terms of their respective licenses.
+
+We are committed to complying with all applicable licenses and respecting the
+intellectual property rights of others. If you believe there has been a lapse
+in proper attribution or a violation of licensing terms, please contact us. We
+are committed to resolving any such issues promptly.

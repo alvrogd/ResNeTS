@@ -1,0 +1,38 @@
+main:
+
+    description: Train and test a regression model on the dataset
+    main: src/main
+
+    flags-dest: args
+    flags-import: all
+    flags-import-skip:
+        - device
+
+    output-scalars:
+        - step: 'Epoch: (\step)'
+        - loss_train: 'Train loss: (\value)'
+        - loss_val: 'Val loss: (\value)'
+        - r2_mean: 'R2 mean: (\value)'
+        - r2_std: 'R2 std: (\value)'
+        - rrmse_mean: 'RRMSE mean: (\value)'
+        - rrmse_std: 'RRMSE std: (\value)'
+        - rmses_mean: 'RMSES mean: (\value)'
+        - rmses_std: 'RMSES std: (\value)'
+        - rmseu_mean: 'RMSEU mean: (\value)'
+        - rmseu_std: 'RMSEU std: (\value)'
+        - params: 'Total params: (\value)'
+        - madds: 'Total mult-adds \(M\): (\value)'
+        - memory: 'Estimated Total Size \(MB\): (\value)'
+        - time_train_mean: 'Training time mean: (\value) s'
+        - time_train_std: 'Training time std: (\value) s'
+        - time_test_mean: 'Testing time mean: (\value) s'
+        - time_test_std: 'Testing time std: (\value) s'
+        - throughput: '(\value)it/s'
+
+    requires:
+        - file: data/
+    sourcecode:
+        - src/datasets/
+        - src/models/
+        - src/utils/
+        - src/main.py
